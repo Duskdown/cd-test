@@ -1,15 +1,7 @@
 spring:
-  datasource:
-    driverClassName: org.h2.Driver
-    url: jdbc:h2:mom:db;Mode=MySql
-
----
-
-spring:
   profiles: test
 
-spring:
-  datasource:
+spring.datasource:
     driverCLassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/sampledev
     username: sample
@@ -24,9 +16,8 @@ spring.jpa:
 
 spring:
   profiles: integration-test
-
-spring:
-  datasource:
+  
+spring.datasource:
     driverCLassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/sampledev
     username: sample
@@ -42,8 +33,7 @@ spring.jpa:
 spring:
   profiles: uat
 
-spring:
-  datasource:
+spring.datasource:
     driverCLassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/sampledev
     username: sample
@@ -59,8 +49,7 @@ spring.jpa:
 spring:
   profiles: prod
 
-spring:
-  datasource:
+spring.datasource:
     driverCLassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1/sampledev
     username: sample

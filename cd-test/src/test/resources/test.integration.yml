@@ -1,0 +1,7 @@
+location:
+  baseUri: http://localhost
+
+service:
+  person:
+    port: 9000
+    path: /persons
