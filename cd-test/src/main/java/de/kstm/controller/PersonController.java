@@ -55,4 +55,9 @@ public class PersonController {
         return new ResponseEntity<Person>(newPerson, httpHeaders,
                 HttpStatus.CREATED);
     }
+    
+    @RequestMapping(value="/error")
+    public ResponseEntity<String> error() {
+        return new ResponseEntity<String>("Error", null, HttpStatus.NOT_FOUND);
+    }
 }
